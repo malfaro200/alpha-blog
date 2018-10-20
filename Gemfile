@@ -50,9 +50,3 @@ group :production do
   gem 'pg' #Gem for postgres
   gem 'rails_12factor'
 end
-
-group :assets do
-  gem 'sass-rails', "  ~> 3.1.0"
-  gem 'coffee-rails', "~> 3.1.0"
-  gem 'uglifier'
-end
