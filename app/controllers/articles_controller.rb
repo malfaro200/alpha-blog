@@ -15,6 +15,7 @@ class ArticlesController < ApplicationController
 	
 	def create
 		@article = Article.new(article_params)
+		@article.user = User.last
 		if @article.save
 			#do something
 			flash[:success] = "Article was succesfully created" #To receive a message
